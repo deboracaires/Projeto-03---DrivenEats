@@ -45,20 +45,25 @@ function selecionarSobremesa(elemento){
     habilitarPedido();
     
 }
+
+
 function habilitarPedido(){
     const elemento = document.querySelector(".selecionar-pedido");
+    
     if(pratoSelecionado === 1 && bebidaSelecionado === 1 && sobremesaSelecionado === 1){
         elemento.classList.add("pedido-finalizado");
     }
+
 }
 
 
 function finalizarPedido(elemento){
-    const botaoMarcado = document.querySelector(".selecionar-pedido");
-    if(pratoSelecionado === 1 && bebidaSelecionado === 1 && sobremesaSelecionado === 1){
-        elemento.getElementById("selecionar-pedido").disabled = true;
+    const botaoMarcado = document.querySelector(".selecionar-pedido.pedido-finalizado");
+    
+    if(botaoMarcado !== null){
+        window.open("https://wa.me/5562982420650");
     }else{
-        elemento.getElementById("selecionar-pedido").disabled = false;
+        alert("Você ainda não selecionou todos os pedidos necessários para a finalização!");
     }
     
 }
