@@ -128,7 +128,7 @@ h3{
 .bottom{
     height: 92px;
     width: 100%;
-    background-color: aqua;
+    background-color: #ffffff;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -147,6 +147,7 @@ h3{
     border-radius: 50px;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 8px 50px;
     text-align: center;
 }
